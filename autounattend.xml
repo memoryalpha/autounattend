@@ -366,7 +366,7 @@
                 <SynchronousCommand wcm:action="add">
                     <Order>5</Order>
                     <RequiresUserInput>false</RequiresUserInput>
-                    <CommandLine>cmd /C curl --output c:\install\install.bat --url "https://gist.githubusercontent.com/xWilli4m/9df0bba0f9457d27cae58c4f190f4554/raw/c734ff68c8b37de38b445ba9d066e2d2d7a686a4/SynchronousCommand.bat"</CommandLine>
+                    <CommandLine>cmd /C curl --output "c:\install\install.bat" --url "https://raw.githubusercontent.com/xWilli4m/autounattend/main/SynchronousCommand.bat"</CommandLine>
                     <Description>Create install folder</Description>
                 </SynchronousCommand>
                 <SynchronousCommand wcm:action="add">
@@ -449,7 +449,7 @@
                 <SynchronousCommand wcm:action="add">
                     <Order>5</Order>
                     <RequiresUserInput>false</RequiresUserInput>
-                    <CommandLine>cmd /C curl --output c:\install\install.bat --url "https://gist.githubusercontent.com/xWilli4m/9df0bba0f9457d27cae58c4f190f4554/raw/c734ff68c8b37de38b445ba9d066e2d2d7a686a4/SynchronousCommand.bat"</CommandLine>
+                    <CommandLine>cmd /C curl --output "c:\install\install.bat" --url "https://raw.githubusercontent.com/xWilli4m/autounattend/main/SynchronousCommand.bat"</CommandLine>
                     <Description>Create install folder</Description>
                 </SynchronousCommand>
                 <SynchronousCommand wcm:action="add">
