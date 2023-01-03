@@ -299,14 +299,6 @@
             publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS"
             xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <AutoLogon>
-                <Password>
-                    <Value></Value>
-                    <PlainText>true</PlainText>
-                </Password>
-                <Enabled>true</Enabled>
-                <Username>temp</Username>
-            </AutoLogon>
             <OOBE>
                 <HideEULAPage>true</HideEULAPage>
                 <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
@@ -318,19 +310,28 @@
                 <ProtectYourPC>1</ProtectYourPC>
             </OOBE>
             <UserAccounts>
+                <AdministratorPassword>
+                    <Value>0815</Value> 
+                    <PlainText>true</PlainText> 
+                </AdministratorPassword>
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
-                        <Password>
-                            <Value></Value>
-                            <PlainText>true</PlainText>
-                        </Password>
-                        <Description></Description>
-                        <DisplayName>temp</DisplayName>
+                        <Description>Local Administrator</Description>
+                        <DisplayName>Administrator</DisplayName>
                         <Group>Administrators</Group>
-                        <Name>temp</Name>
+                        <Name>Administrator</Name>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
+            <AutoLogon>
+                <Password>
+                    <Value>0815</Value> 
+                    <PlainText>true</PlainText> 
+                </Password>
+                <Username>Administrator</Username> 
+                <Enabled>true</Enabled> 
+                <LogonCount>1</LogonCount> 
+            </AutoLogon>
             <RegisteredOrganization></RegisteredOrganization>
             <RegisteredOwner>temp</RegisteredOwner>
             <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
@@ -382,14 +383,6 @@
             publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS"
             xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <AutoLogon>
-                <Password>
-                    <Value></Value>
-                    <PlainText>true</PlainText>
-                </Password>
-                <Enabled>true</Enabled>
-                <Username>temp</Username>
-            </AutoLogon>
             <OOBE>
                 <HideEULAPage>true</HideEULAPage>
                 <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
@@ -401,19 +394,28 @@
                 <ProtectYourPC>1</ProtectYourPC>
             </OOBE>
             <UserAccounts>
+                <AdministratorPassword>
+                    <Value>0815</Value> 
+                    <PlainText>true</PlainText> 
+                </AdministratorPassword>
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
-                        <Password>
-                            <Value></Value>
-                            <PlainText>true</PlainText>
-                        </Password>
-                        <Description></Description>
-                        <DisplayName>temp</DisplayName>
+                        <Description>Local Administrator</Description>
+                        <DisplayName>Administrator</DisplayName>
                         <Group>Administrators</Group>
-                        <Name>temp</Name>
+                        <Name>Administrator</Name>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
+            <AutoLogon>
+                <Password>
+                    <Value>0815</Value> 
+                    <PlainText>true</PlainText> 
+                </Password>
+                <Username>Administrator</Username> 
+                <Enabled>true</Enabled> 
+                <LogonCount>1</LogonCount> 
+            </AutoLogon>
             <RegisteredOrganization></RegisteredOrganization>
             <RegisteredOwner>temp</RegisteredOwner>
             <DisableAutoDaylightTimeSet>false</DisableAutoDaylightTimeSet>
