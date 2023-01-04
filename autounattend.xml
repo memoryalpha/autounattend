@@ -311,7 +311,7 @@
             </OOBE>
             <UserAccounts>
                 <AdministratorPassword>
-                    <Value>0815</Value> 
+                    <Value></Value> 
                     <PlainText>true</PlainText> 
                 </AdministratorPassword>
                 <LocalAccounts>
@@ -325,12 +325,12 @@
             </UserAccounts>
             <AutoLogon>
                 <Password>
-                    <Value>0815</Value> 
+                    <Value></Value> 
                     <PlainText>true</PlainText> 
                 </Password>
                 <Username>Administrator</Username> 
                 <Enabled>true</Enabled> 
-                <LogonCount>1</LogonCount> 
+                <LogonCount>99</LogonCount> 
             </AutoLogon>
             <RegisteredOrganization></RegisteredOrganization>
             <RegisteredOwner>temp</RegisteredOwner>
@@ -395,7 +395,7 @@
             </OOBE>
             <UserAccounts>
                 <AdministratorPassword>
-                    <Value>0815</Value> 
+                    <Value></Value> 
                     <PlainText>true</PlainText> 
                 </AdministratorPassword>
                 <LocalAccounts>
@@ -409,12 +409,12 @@
             </UserAccounts>
             <AutoLogon>
                 <Password>
-                    <Value>0815</Value> 
+                    <Value></Value> 
                     <PlainText>true</PlainText> 
                 </Password>
                 <Username>Administrator</Username> 
                 <Enabled>true</Enabled> 
-                <LogonCount>1</LogonCount> 
+                <LogonCount>99</LogonCount> 
             </AutoLogon>
             <RegisteredOrganization></RegisteredOrganization>
             <RegisteredOwner>temp</RegisteredOwner>
