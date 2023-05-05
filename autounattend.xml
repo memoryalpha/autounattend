@@ -445,18 +445,6 @@
                 <SynchronousCommand wcm:action="add">
                     <Order>4</Order>
                     <RequiresUserInput>false</RequiresUserInput>
-                    <CommandLine>cmd /C mkdir c:\install</CommandLine>
-                    <Description>Create install folder</Description>
-                </SynchronousCommand>
-                <SynchronousCommand wcm:action="add">
-                    <Order>5</Order>
-                    <RequiresUserInput>false</RequiresUserInput>
-                    <CommandLine>cmd /C curl --output "c:\install\install.bat" --url "https://raw.githubusercontent.com/williamjust/autounattend/main/SynchronousCommand.bat"</CommandLine>
-                    <Description>Create install folder</Description>
-                </SynchronousCommand>
-                <SynchronousCommand wcm:action="add">
-                    <Order>6</Order>
-                    <RequiresUserInput>false</RequiresUserInput>
                     <CommandLine>cmd /C c:\install\install.bat</CommandLine>
                     <Description>Create install folder</Description>
                 </SynchronousCommand>
