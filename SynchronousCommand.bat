@@ -1,12 +1,33 @@
 @echo off
-mkdir c:\install
-cd c:\install
+mkdir c:\install\software
+cd c:\install\software
 
+######
 
-curl --output "firefox.exe" "https://api.n3k1.de/exe/firefox.exe"
-firefox.exe /S
+setlocal EnableDelayedExpansion
+echo Ermittlung der Download-URL für Firefox...
+set URL=https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
 
+for /f "delims=" %%a in ('powershell -command "(New-Object System.Net.WebClient).DownloadString('%URL%')" ^| findstr /i "https://download.mozilla.org"') do (
+    set "DOWNLOAD_URL=%%a"
+)
 
-curl --output "python.exe" "https://www.python.org/ftp/python/3.11.1/python-3.11.1-amd64.exe"
-python.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0 SimpleInstall=1 AppendPath=1
-cmd /C python -m pip install requests
+echo Herunterladen von Firefox...
+powershell -command "(New-Object System.Net.WebClient).DownloadFile('%DOWNLOAD_URL%', 'FirefoxSetup.exe')"
+
+echo Installieren von Firefox...
+start /wait "" FirefoxSetup.exe -ms
+
+echo Bereinigung...
+del FirefoxSetup.exe
+
+######
+
+echo Installing Python...
+set PYTHON_INSTALL_PATH=C:\Program Files\Python311
+start /wait "" "https://www.python.org/ftp/python/3.11.1/python-3.11.1-amd64.exe" /quiet TargetDir=%PYTHON_INSTALL_PATH%
+
+echo Installing requests...
+setx PATH "%PATH%;%PYTHON_INSTALL_PATH%;%PYTHON_INSTALL_PATH%\Scripts"
+%PYTHON_INSTALL_PATH%\Scripts\pip install requests
+echo Done!
