@@ -15,3 +15,5 @@ https://dellwindowsreinstallationguide.com/the-oem-folder/
 - ``slmgr /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX``
 - ``slmgr /ato``
 - ``slmgr /dlv``
+
+Get BIOS Windows Key: ``wmic path softwareLicensingService get OA3xOriginalProductKey``
