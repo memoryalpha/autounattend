@@ -7,11 +7,11 @@ https://dellwindowsreinstallationguide.com/the-oem-folder/
 
 # Aktivate
 
-#### Remove Key
+### Remove Key
 slmgr /upk
 slmgr /dlv
 
-#### Add new Key
+### Add new Key
 slmgr /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 slmgr /ato
 slmgr /dlv
