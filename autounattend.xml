@@ -216,7 +216,7 @@
                 <SynchronousCommand wcm:action="add">
                     <Order>4</Order>
                     <RequiresUserInput>false</RequiresUserInput>
-                    <CommandLine>cmd /C c:\install\install.bat</CommandLine>
+                    <CommandLine>cmd /C c:\install\SynchronousCommand.bat</CommandLine>
                     <Description>Create install folder</Description>
                 </SynchronousCommand>
             </FirstLogonCommands>
