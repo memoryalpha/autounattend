@@ -29,5 +29,5 @@ start /wait "" "https://www.python.org/ftp/python/3.11.1/python-3.11.1-amd64.exe
 
 echo Installing requests...
 setx PATH "%PATH%;%PYTHON_INSTALL_PATH%;%PYTHON_INSTALL_PATH%\Scripts"
-%PYTHON_INSTALL_PATH%\Scripts\pip install requests
+%PYTHON_INSTALL_PATH%\Scripts\pip install requests rich
 echo Done!
